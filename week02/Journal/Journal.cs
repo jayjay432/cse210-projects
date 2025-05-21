@@ -45,7 +45,7 @@ public class Journal
         {
             foreach (Entry entry in _entries)
             {
-                outputFile.WriteLine($"{entry._date}, {entry._promptTest}, {entry._entryTest}");
+                outputFile.WriteLine($"{entry._date.ToShortDateString()}, {entry._promptTest}, {entry._entryTest}");
             }
         }
 
@@ -76,7 +76,7 @@ public class Journal
 
                     Console.WriteLine("");
 
-                    Console.WriteLine($"Date: {date}\nPrompts: {prompt}\nEntry text: {response}.");
+                    Console.WriteLine($"Date: {date.ToShortDateString()}\nPrompts: {prompt}\nEntry text: {response}.");
                     Console.WriteLine("---------------------------------------------------------");
 
                 }
