@@ -7,7 +7,6 @@ public class Fractions
 
     private int _top;
     private int _bottom;
-
     public Fractions()
     {
         _top = 1;
